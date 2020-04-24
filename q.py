@@ -3,16 +3,16 @@ import numpy as np
 
 class QLearningAgent:
     def __init__(self, env, learning_rate, max_steps, discount, epsilon, epsilon_min, epsilon_max, decay_rate):
-        self.env = env
-        self.learning_rate = learning_rate
-        self.max_steps = max_steps
-        self.discount = discount
-        self.epsilon = epsilon
-        self.epsilon_min = epsilon_min
-        self.epsilon_max = epsilon_max
-        self.decay_rate = decay_rate
-        self.obs_num = env.observation_space.n
-        self.action_num = env.action_space.n
+      self.env = env
+      self.learning_rate = learning_rate
+      self.max_steps = max_steps
+      self.discount = discount
+      self.epsilon = epsilon
+      self.epsilon_min = epsilon_min
+      self.epsilon_max = epsilon_max
+      self.decay_rate = decay_rate
+      self.obs_num = env.observation_space.n
+      self.action_num = env.action_space.n
     
     def make_table(obs_num, action_num):
       q_table = np.zeros((obs_num, action_num))
