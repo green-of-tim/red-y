@@ -2,6 +2,7 @@
 import numpy as np
 
 class QLearningAgent:
+    
     def __init__(self, env, learning_rate, max_steps, discount, epsilon, epsilon_min, epsilon_max, decay_rate):
       self.env = env
       self.learning_rate = learning_rate
