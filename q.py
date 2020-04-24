@@ -3,7 +3,7 @@ import numpy as np
 
 class QLearningAgent:
 
-    def make_table(obs_num, action_nim):
+    def make_table(obs_num, action_num):
       q_table = np.zeros((obs_num, action_num))
       return q_table
 
